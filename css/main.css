@@ -1,0 +1,68 @@
+:root {
+    --main-bg-color: #000000;
+    --main-text:#f2f6e9;
+    --hover-text:#6a50dd;
+    --description-text:#f2f6e9;
+  }
+body {
+    padding: 0;
+    margin: 0;
+    background: var(--main-text);
+}
+.navbar {
+    background: var(--main-bg-color);
+}
+.nav-link,
+.navbar-brand {
+    color: var(--main-text);
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: var(--hover-text);
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+.header {
+    background-image: url('../images/background3small.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+.description {
+	left: 50%;
+	position: absolute;
+	top: 45%;
+	transform: translate(-50%, -55%);
+	text-align: center;
+}
+.description h1 {
+	color: var(--description-text);
+}
+.description p {
+	color: var(--description-text);
+	font-size: 1.3rem;
+	line-height: 1.5;
+}
+.description button {
+    border:1px solid var(--main-bg-color);
+    background: var(--hover-text);
+    border-radius: 0;
+    color: var(--description-text);
+}
+.description button:hover {
+	border:1px solid var(--description-text);
+    background: var(--description-text);
+    color: var(--main-bg-color);
+}
