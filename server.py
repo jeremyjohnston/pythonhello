@@ -4,10 +4,13 @@ from pyramid.response import Response
 import os
 
 def hello_world(request):
-    name = os.environ.get('NAME')
-    if name == None or len(name) == 0:
-        name = "world"
-    message = "Hello, " + name + "!\n"
+    # name = os.environ.get('NAME')
+    # if name == None or len(name) == 0:
+    #     name = "world"
+    # message = "Hello, " + name + "!\n"
+    index_file = open("index.html", "r")
+    message = index_file.read()
+    index_file.close()
     return Response(message)
 
 if __name__ == '__main__':
