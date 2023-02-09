@@ -12,7 +12,7 @@ def homepage():
 
     try:
         return render_template("index.html", title = title, paragraph=paragraph)
-    except Exception, e:
+    except (Exception, e):
         return str(e)
 
 if __name__ == '__main__':
