@@ -1,6 +1,9 @@
 from flask import Flask, render_template
 
-app = Flask(__name__)
+app = Flask(__name__,
+    static_url_path='',
+    static_folder='pythonhello/static',
+    template_folder='pythonhello/templates')
 
 import os
 
@@ -12,8 +15,8 @@ def homepage():
 
     try:
         return render_template("index.html", title = title, paragraph=paragraph)
-    except (Exception, e):
-        return str(e)
+    except (Exception):
+        pass
 
 if __name__ == '__main__':
     ##myport = int(os.environ.get("PORT"))
