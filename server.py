@@ -1,6 +1,6 @@
 from flask import Flask, render_template
 
-server = Flask(__name__)
+app = Flask(__name__)
 
 import os
 
@@ -16,5 +16,5 @@ def homepage():
         return str(e)
 
 if __name__ == '__main__':
-    port = int(os.environ.get("PORT"))
-    server.run(debug = True, host='0.0.0.0', port, passthrough_errors=True)
+    ##myport = int(os.environ.get("PORT"))
+    app.run(debug = True, host='0.0.0.0', port=8080, passthrough_errors=True)
