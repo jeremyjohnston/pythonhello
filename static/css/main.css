@@ -26,8 +26,14 @@ body {
 .navbar-collapse {
     justify-content: flex-end;
 }
+#header-radiant{
+    background-image: radial-gradient(circle, black, var(--hover-text));
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
 .header {
-    background-image: url('/images/background3small.png');
+    background-image: url("../images/background3small.png");
     background-size: cover;
     background-position: center;
     position: relative;
