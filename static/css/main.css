@@ -27,7 +27,7 @@ body {
     justify-content: flex-end;
 }
 .header {
-    background-image: url('../images/background3small.png');
+    background-image: url('/images/background3small.png');
     background-size: cover;
     background-position: center;
     position: relative;

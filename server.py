@@ -2,21 +2,24 @@ from flask import Flask, render_template
 
 app = Flask(__name__,
     static_url_path='',
-    static_folder='pythonhello/static',
-    template_folder='pythonhello/templates')
+    static_folder='static',
+    template_folder='templates')
 
 import os
 
 @app.route('/')
+@app.route('/index')
+@app.route('/home')
 def homepage():
 
-    title = "Hello :)"
-    paragraph = ["placeholder"]
+    mytitle = "Hello :)"
+    myparagraph = ["placeholder"]
 
     try:
-        return render_template("index.html", title = title, paragraph=paragraph)
-    except (Exception):
-        pass
+        return render_template("index.html")
+    except Exception as e:
+        print(e)
+        return 'oops'
 
 if __name__ == '__main__':
     ##myport = int(os.environ.get("PORT"))
