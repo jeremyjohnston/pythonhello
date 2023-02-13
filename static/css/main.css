@@ -33,7 +33,7 @@ body {
     position: relative;
 }
 .header {
-    background-image: url('../bg1.png');
+    background-image: url('https://jeremywebsiteassets.s3.us-west-2.amazonaws.com/images/bg1.png');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -72,9 +72,4 @@ body {
     background: var(--description-text);
     color: var(--main-bg-color);
 }
-.description .bg2 {
-    border:1px solid var(--main-bg-color);
-    background-image: url("../bg2.png");
-    border-radius: 0;
-    color: var(--description-text);
-}
+
