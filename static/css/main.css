@@ -78,9 +78,3 @@ body {
     border-radius: 0;
     color: var(--description-text);
 }
-.description .bg3 {
-    border:1px solid var(--main-bg-color);
-    background-image: url("../bg3.png");
-    border-radius: 0;
-    color: var(--description-text);
-}

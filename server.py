@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, send_from_directory
 
 app = Flask(__name__,
     static_url_path='',
@@ -6,6 +6,10 @@ app = Flask(__name__,
     template_folder='templates')
 
 import os
+
+@app.route('/<path:filename>')  
+def send_file(filename):  
+    return send_from_directory(app.static_folder, filename)
 
 @app.route('/')
 @app.route('/index')
