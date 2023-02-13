@@ -33,7 +33,7 @@ body {
     position: relative;
 }
 .header {
-    background-image: url("../images/bg1.png");
+    background-image: url('../bg1.png');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -74,13 +74,13 @@ body {
 }
 .description .bg2 {
     border:1px solid var(--main-bg-color);
-    background-image: url("../images/bg2.png");
+    background-image: url("../bg2.png");
     border-radius: 0;
     color: var(--description-text);
 }
 .description .bg3 {
     border:1px solid var(--main-bg-color);
-    background-image: url("../images/bg3.png");
+    background-image: url("../bg3.png");
     border-radius: 0;
     color: var(--description-text);
 }
